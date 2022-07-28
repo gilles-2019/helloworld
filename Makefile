@@ -3,8 +3,7 @@ csrc = $(wildcard source/*.c)
 
 IDIR =./include/
 SDIR =/source/
-CC=gcc
-CFLAGS=-I$(IDIR)
+
 
 obj = $(csrc:.c=.o) 
 
@@ -20,3 +19,7 @@ clean:
 .PHONY: cleandep
 cleandep:
 	rm -f $(dep)
+	
+.PHONY: install 
+install: helloworld 
+
