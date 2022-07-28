@@ -23,3 +23,6 @@ cleandep:
 .PHONY: install 
 install: helloworld 
 
+
+##install -m 0755 helloworld $(prefix)/bin
+
